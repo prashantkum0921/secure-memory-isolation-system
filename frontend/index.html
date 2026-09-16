@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Memory Isolation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container">
+
+    <h1>🛡 Secure Memory Isolation System</h1>
+    <p class="subtitle">Real-time Process Isolation & Memory Security Simulation</p>
+
+    <input id="pid" placeholder="Enter Process ID (e.g. P1)">
+
+    <div class="card controls">
+        <button onclick="createProcess()">Create Process</button>
+        <button onclick="allocateMemory()">Allocate Memory</button>
+        <button onclick="viewMemory()">View Memory</button>
+        <button onclick="simulateAttack()">Simulate Attack</button>
+        <button onclick="viewLogs()">View Logs</button>
+    </div>
+
+    <div class="card" id="output"></div>
+
+    <div class="card" id="memory-visual"></div>
+
+</div>
+
+<div id="alertBox" class="alert hidden"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
